@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3341093219B7072B004741FE /* ASIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3341093119B7072B004741FE /* ASIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3393B66C19B6EB6E005CA444 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E2863619B4121B004971BD /* ASIAuthenticationDialog.m */; };
 		3393B66D19B6EB6E005CA444 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E2863919B4121B004971BD /* ASIDataCompressor.m */; };
 		3393B66E19B6EB6E005CA444 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E2863B19B4121B004971BD /* ASIDataDecompressor.m */; };
@@ -30,10 +29,10 @@
 		3393B68119B6EB79005CA444 /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E2864819B4121B004971BD /* ASIProgressDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33B721F21A24515100B96896 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 33B721F01A24515100B96896 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33B721F31A24515100B96896 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B721F11A24515100B96896 /* Reachability.m */; };
+		B39CD5E21CB785CC0075B10E /* ASIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B39CD5E11CB785CC0075B10E /* ASIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3341093119B7072B004741FE /* ASIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIKit.h; sourceTree = "<group>"; };
 		3393B65519B6EB15005CA444 /* ASIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ASIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B721F01A24515100B96896 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		33B721F11A24515100B96896 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		33E2864619B4121B004971BD /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
 		33E2864719B4121B004971BD /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
 		33E2864819B4121B004971BD /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		B39CD5E11CB785CC0075B10E /* ASIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,6 @@
 		33E2861419B411C8004971BD = {
 			isa = PBXGroup;
 			children = (
-				3341093119B7072B004741FE /* ASIKit.h */,
 				33E2863419B4121B004971BD /* ASIHTTPRequest */,
 				33B6E76A19B6B94000094042 /* Frameworks */,
 				33E2861E19B411C8004971BD /* Products */,
@@ -98,6 +97,7 @@
 		33E2863419B4121B004971BD /* ASIHTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
+				B39CD5E11CB785CC0075B10E /* ASIKit.h */,
 				33B721F01A24515100B96896 /* Reachability.h */,
 				33B721F11A24515100B96896 /* Reachability.m */,
 				33E2863519B4121B004971BD /* ASIAuthenticationDialog.h */,
@@ -139,10 +139,10 @@
 				3393B67A19B6EB79005CA444 /* ASIDownloadCache.h in Headers */,
 				3393B67C19B6EB79005CA444 /* ASIHTTPRequest.h in Headers */,
 				3393B67D19B6EB79005CA444 /* ASIHTTPRequestConfig.h in Headers */,
-				3341093219B7072B004741FE /* ASIKit.h in Headers */,
 				33B721F21A24515100B96896 /* Reachability.h in Headers */,
 				3393B67E19B6EB79005CA444 /* ASIHTTPRequestDelegate.h in Headers */,
 				3393B67F19B6EB79005CA444 /* ASIInputStream.h in Headers */,
+				B39CD5E21CB785CC0075B10E /* ASIKit.h in Headers */,
 				3393B68019B6EB79005CA444 /* ASINetworkQueue.h in Headers */,
 				3393B68119B6EB79005CA444 /* ASIProgressDelegate.h in Headers */,
 			);
