@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
  s.name = 'ASIKit'
- s.version = '1.0.6'
+ s.version = '1.0.0'
  s.summary = 'A short description of MyPodDemo.'
  s.description = <<-DESC
  A longer description of ASIKit in Markdown format.
