@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
  s.author = { 'MarkeJave' => '308865427@qq.com' }
  s.source = { :git => 'https://github.com/MarkeJave/ASIKit.git', :tag => s.version.to_s }
  s.source_files = 'ASIHTTPRequest/*.{h,m}', 'ASIHTTPRequest/**/*.{h,m}'
- s.requires_arc = true
+ s.requires_arc = false
  s.platform = :ios
  s.ios.deployment_target = '7.0'
 

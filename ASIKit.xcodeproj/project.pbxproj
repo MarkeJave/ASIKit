@@ -12,7 +12,7 @@
 		3393B66E19B6EB6E005CA444 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E2863B19B4121B004971BD /* ASIDataDecompressor.m */; };
 		3393B66F19B6EB6E005CA444 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E2863D19B4121B004971BD /* ASIDownloadCache.m */; };
 		3393B67019B6EB6E005CA444 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E2863F19B4121B004971BD /* ASIFormDataRequest.m */; };
-		3393B67119B6EB6E005CA444 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E2864119B4121B004971BD /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		3393B67119B6EB6E005CA444 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E2864119B4121B004971BD /* ASIHTTPRequest.m */; };
 		3393B67219B6EB6E005CA444 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E2864519B4121B004971BD /* ASIInputStream.m */; };
 		3393B67319B6EB6E005CA444 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E2864719B4121B004971BD /* ASINetworkQueue.m */; };
 		3393B67619B6EB79005CA444 /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E2863519B4121B004971BD /* ASIAuthenticationDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -175,7 +175,7 @@
 		33E2861519B411C8004971BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Marike Jave";
 				TargetAttributes = {
 					3393B65419B6EB15005CA444 = {
@@ -312,11 +312,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					arm64,
-					armv7,
-					armv7s,
-				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -332,6 +327,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -348,7 +344,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
@@ -358,11 +354,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					arm64,
-					armv7,
-					armv7s,
-				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
