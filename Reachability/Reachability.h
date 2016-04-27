@@ -28,6 +28,13 @@
 #import <Foundation/Foundation.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 
+#import <sys/socket.h>
+#import <netinet/in.h>
+#import <netinet6/in6.h>
+#import <arpa/inet.h>
+#import <ifaddrs.h>
+#import <netdb.h>
+
 /**
  * Does ARC support GCD objects?
  * It does if the minimum deployment target is iOS 6+ or Mac OS X 8+
@@ -49,10 +56,9 @@
 #define NS_ENUM(_type, _name) enum _name : _type _name; enum _name : _type
 #endif
 
-extern NSString *const kASIReachabilityChangedNotification;
+extern NSString *const kReachabilityChangedNotification;
 
 typedef NS_ENUM(NSInteger, NetworkStatus) {
-    
     // Apple NetworkStatus Compatible Names.
     NotReachable = 0,
     ReachableViaWiFi = 2,
@@ -69,6 +75,7 @@ typedef void (^NetworkUnreachable)(Reachability * reachability);
 @property (nonatomic, copy) NetworkReachable    reachableBlock;
 @property (nonatomic, copy) NetworkUnreachable  unreachableBlock;
 
+
 @property (nonatomic, assign) BOOL reachableOnWWAN;
 
 +(Reachability*)reachabilityWithHostname:(NSString*)hostname;
@@ -76,33 +83,27 @@ typedef void (^NetworkUnreachable)(Reachability * reachability);
 +(Reachability*)reachabilityWithAddress:(const struct sockaddr_in*)hostAddress;
 +(Reachability*)reachabilityForLocalWiFi;
 
-- (Reachability *)initWithReachabilityRef:(SCNetworkReachabilityRef)ref;
+-(Reachability *)initWithReachabilityRef:(SCNetworkReachabilityRef)ref;
 
-- (BOOL)startNotifier;
-- (void)stopNotifier;
+-(BOOL)startNotifier;
+-(void)stopNotifier;
 
-- (BOOL)isReachable;
-- (BOOL)isReachableViaWWAN;
-- (BOOL)isReachableViaWiFi;
+-(BOOL)isReachable;
+-(BOOL)isReachableViaWWAN;
+-(BOOL)isReachableViaWiFi;
 
 // WWAN may be available, but not active until a connection has been established.
 // WiFi may require a connection for VPN on Demand.
-- (BOOL)isConnectionRequired; // Identical DDG variant.
-- (BOOL)connectionRequired; // Apple's routine.
+-(BOOL)isConnectionRequired; // Identical DDG variant.
+-(BOOL)connectionRequired; // Apple's routine.
 // Dynamic, on demand connection?
-- (BOOL)isConnectionOnDemand;
+-(BOOL)isConnectionOnDemand;
 // Is user intervention required?
-- (BOOL)isInterventionRequired;
+-(BOOL)isInterventionRequired;
 
-- (NetworkStatus)currentReachabilityStatus;
-- (SCNetworkReachabilityFlags)reachabilityFlags;
-- (NSString*)currentReachabilityString;
-- (NSString*)currentReachabilityFlags;
+-(NetworkStatus)currentReachabilityStatus;
+-(SCNetworkReachabilityFlags)reachabilityFlags;
+-(NSString*)currentReachabilityString;
+-(NSString*)currentReachabilityFlags;
 
 @end
-
-
-/**
- *  是否WIFI
- */
-#define IS_WIFI                                             [[Reachability reachabilityForLocalWiFi] currentReachabilityStatus]!= NotReachable

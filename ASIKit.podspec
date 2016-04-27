@@ -17,5 +17,5 @@ Pod::Spec.new do |s|
  s.requires_arc = false
  s.platform = :ios
  s.ios.deployment_target = '7.0'
-
+ s.dependency 'Reachability'
  end
