@@ -27,10 +27,6 @@
 		3393B67F19B6EB79005CA444 /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E2864419B4121B004971BD /* ASIInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3393B68019B6EB79005CA444 /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E2864619B4121B004971BD /* ASINetworkQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3393B68119B6EB79005CA444 /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E2864819B4121B004971BD /* ASIProgressDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B32373881CD061D300665471 /* LICENCE.txt in Resources */ = {isa = PBXBuildFile; fileRef = B32373841CD061D300665471 /* LICENCE.txt */; };
-		B32373891CD061D300665471 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = B32373851CD061D300665471 /* Reachability.h */; };
-		B323738A1CD061D300665471 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B32373861CD061D300665471 /* Reachability.m */; };
-		B323738B1CD061D300665471 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B32373871CD061D300665471 /* README.md */; };
 		B39CD5E21CB785CC0075B10E /* ASIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B39CD5E11CB785CC0075B10E /* ASIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -56,10 +52,6 @@
 		33E2864619B4121B004971BD /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
 		33E2864719B4121B004971BD /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
 		33E2864819B4121B004971BD /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
-		B32373841CD061D300665471 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
-		B32373851CD061D300665471 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		B32373861CD061D300665471 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		B32373871CD061D300665471 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B39CD5E11CB785CC0075B10E /* ASIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,7 +76,6 @@
 		33E2861419B411C8004971BD = {
 			isa = PBXGroup;
 			children = (
-				B32373831CD061D300665471 /* Reachability */,
 				33E2863419B4121B004971BD /* ASIHTTPRequest */,
 				33B6E76A19B6B94000094042 /* Frameworks */,
 				33E2861E19B411C8004971BD /* Products */,
@@ -127,17 +118,6 @@
 			path = ASIHTTPRequest;
 			sourceTree = "<group>";
 		};
-		B32373831CD061D300665471 /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				B32373841CD061D300665471 /* LICENCE.txt */,
-				B32373851CD061D300665471 /* Reachability.h */,
-				B32373861CD061D300665471 /* Reachability.m */,
-				B32373871CD061D300665471 /* README.md */,
-			);
-			path = Reachability;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -158,7 +138,6 @@
 				B39CD5E21CB785CC0075B10E /* ASIKit.h in Headers */,
 				3393B68019B6EB79005CA444 /* ASINetworkQueue.h in Headers */,
 				3393B68119B6EB79005CA444 /* ASIProgressDelegate.h in Headers */,
-				B32373891CD061D300665471 /* Reachability.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +198,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B32373881CD061D300665471 /* LICENCE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,13 +210,11 @@
 			files = (
 				3393B66C19B6EB6E005CA444 /* ASIAuthenticationDialog.m in Sources */,
 				3393B66D19B6EB6E005CA444 /* ASIDataCompressor.m in Sources */,
-				B323738B1CD061D300665471 /* README.md in Sources */,
 				3393B66E19B6EB6E005CA444 /* ASIDataDecompressor.m in Sources */,
 				3393B66F19B6EB6E005CA444 /* ASIDownloadCache.m in Sources */,
 				3393B67019B6EB6E005CA444 /* ASIFormDataRequest.m in Sources */,
 				3393B67119B6EB6E005CA444 /* ASIHTTPRequest.m in Sources */,
 				3393B67219B6EB6E005CA444 /* ASIInputStream.m in Sources */,
-				B323738A1CD061D300665471 /* Reachability.m in Sources */,
 				3393B67319B6EB6E005CA444 /* ASINetworkQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
