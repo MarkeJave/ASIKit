@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
  s.name = 'ASIKit'
- s.version = '1.0.0'
+ s.version = '1.0.2'
  s.summary = 'A short description of MyPodDemo.'
  s.description = <<-DESC
  A longer description of ASIKit in Markdown format.
@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
  s.requires_arc = false
  s.platform = :ios
  s.ios.deployment_target = '7.0'
- s.library  = 'libz.1.2.5'
+ s.library  = 'libz'
  s.dependency 'Reachability'
  end
